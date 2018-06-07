@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>fperreault</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            html, body{
+                padding: 0;
+                margin: 0;
+                overflow: hidden; 
+            }
+            h2{
+                color: #7c6d5d;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 9px;
+                padding: 10px;
+                margin: 0px;
+                background-color: #e5ded7;
+                text-align: center;
+                position: fixed;
+                text-decoration: underline;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>PRESS A KEY</h2>
+        <canvas></canvas>
+        <script src="../letter.js"></script>
+        <script>
+            let letter = new Letter(
+                'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+                .charAt( Math.round(
+                    Math.random() * 62
+                ))
+            )
+            letter.render();
+
+            document.addEventListener('keypress', function(e){
+                letter.set(e.key);
+                letter.render();
+            });
+        </script>
+    </body>
+</html>

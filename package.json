@@ -1,0 +1,13 @@
+{
+  "name": "letter",
+  "version": "1.0.1",
+  "main": "bulker.js",
+  "description": "",
+  "author": "lg2",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "canvas": "^2.0.0-alpha.12",
+    "fs": "0.0.1-security"
+  }
+}
