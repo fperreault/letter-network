@@ -1,9 +1,9 @@
 {
-  "name": "letter",
+  "name": "letter-network",
   "version": "1.0.1",
   "main": "bulker.js",
   "description": "",
-  "author": "lg2",
+  "author": "fperreault",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {

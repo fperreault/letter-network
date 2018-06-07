@@ -1,10 +1,13 @@
-## Pour visualiser dans un navigateur
-ouvrir `client/index.html`
+## To run with a browser
+open `client/index.html`
 
-## Pour utiliser le _bulker generator_ sous MAC:
+## To use _bulker generator_ on MAC:
 `brew install pkg-config cairo pango libpng jpeg giflib`
 `npm install`
 
-Pour envoyer un bulk de plusieurs lettres random: `node bulker`
+Render a random letter: 
+`node bulker`
 
-Pour envoyer la generation d'une lettre spécifique: `node bulker A`
+Render a specific letter/word: 
+`node bulker A`
+`node bulker LETTER`
